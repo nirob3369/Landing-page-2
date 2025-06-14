@@ -75,7 +75,8 @@
 
   <h1>Confirm Your Email to Instantly Win $800!</h1>
   <div class="viewers">🔥 1061 people viewing now</div>
-  <div class="countdown">⏰ Offer expires in: <span id="timer">05:00</span></div>
+  <div class="countdown">
+  ⏰ Offer expires in: <span id="timer">05:00</span></div>
 
   <a href="https://singingfiles.com/show.php?l=0&u=1159972&id=68776" class="button android">🎁 Claim on Android</a>
   <a href="https://singingfiles.com/show.php?l=0&u=1159972&id=68777" class="button iphone">🎉 Claim on iPhone</a>
@@ -129,18 +130,28 @@
         </div>
       `;
     });
-  </script>
+  
+
+<!-- Viewer Counter Section -->
+<div style="text-align: center; font-size: 18px; margin-top: 20px;">
+    🔥 Live Viewers: <span id="viewerCount">1061</span>
+</div>
+
 <script>
-function updateViewerCount() {
-  const viewerElement = document.getElementById("viewerCount");
-  let count = parseInt(viewerElement.textContent);
-  const change = Math.floor(Math.random() * 16) - 5;
-  count += change;
-  if (count < 1000) count = 1000;
-  if (count > 1200) count = 1200;
-  viewerElement.textContent = count;
-}
-setInterval(updateViewerCount, Math.floor(Math.random() * 3000) + 2000);
+  function updateViewerCount() {
+    const viewerElement = document.getElementById('viewerCount');
+    let count = parseInt(viewerElement.textContent);
+
+    const change = Math.floor(Math.random() * 10 - 5); // +/- 5 এর মধ্যে পরিবর্তন
+    count += change;
+
+    if (count < 1000) count = 1000;
+    if (count > 1200) count = 1200;
+
+    viewerElement.textContent = count;
+  }
+
+  setInterval(updateViewerCount, Math.floor(Math.random() * 1500) + 1000); // 1-2.5 সেকেন্ড
 </script>
 
 </body>
