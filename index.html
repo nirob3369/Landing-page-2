@@ -130,5 +130,18 @@
       `;
     });
   </script>
+<script>
+function updateViewerCount() {
+  const viewerElement = document.getElementById("viewerCount");
+  let count = parseInt(viewerElement.textContent);
+  const change = Math.floor(Math.random() * 16) - 5;
+  count += change;
+  if (count < 1000) count = 1000;
+  if (count > 1200) count = 1200;
+  viewerElement.textContent = count;
+}
+setInterval(updateViewerCount, Math.floor(Math.random() * 3000) + 2000);
+</script>
+
 </body>
 </html>
