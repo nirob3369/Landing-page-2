@@ -1,152 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Win $800 Today!</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <meta charset="UTF-8">
+  <title>Win $800 – Confirm Now!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      background-color: #f9f9f9;
-    }
-    .header {
-      background: orange;
-      color: white;
-      font-weight: bold;
-      padding: 10px;
-      text-align: center;
-      font-size: 18px;
-    }
-    .main {
-      text-align: center;
-      padding: 20px;
-    }
-    .main img.logo {
-      width: 180px;
-      margin-bottom: 15px;
-    }
-    .main h1 {
-      color: #333;
-      font-size: 24px;
-    }
-    .main .stats {
-      margin: 10px 0;
-      font-size: 16px;
-      color: #444;
-    }
-    .timer {
-      color: red;
-      font-size: 18px;
-      font-weight: bold;
-    }
-    .button {
-      display: block;
-      margin: 15px auto;
-      padding: 15px 25px;
-      font-size: 18px;
-      font-weight: bold;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      width: 80%;
-      max-width: 300px;
-      text-decoration: none;
-      color: white;
-    }
-    .android-btn {
-      background-color: #28a745;
-    }
-    .iphone-btn {
-      background-color: #007bff;
-    }
-    .comment-section {
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 10px;
-    }
-    .comment {
-      background: white;
-      margin-bottom: 10px;
-      padding: 10px;
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    .comment img {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      margin-right: 10px;
-    }
-    .comment-content {
-      text-align: left;
-    }
-    .comment-content .name {
-      font-weight: bold;
-      font-size: 15px;
-    }
-    .comment-content .text {
-      font-size: 14px;
-      color: #333;
-    }
+    body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background: #f9f9f9; }
+    .container { max-width: 500px; margin: auto; background: #fff; padding: 20px; text-align: center; border-radius: 10px; box-shadow: 0 0 10px #ccc; }
+    .logo { width: 100px; margin: 10px auto; }
+    .headline { font-size: 24px; font-weight: bold; margin: 20px 0; }
+    .countdown { font-size: 18px; color: red; margin-bottom: 15px; }
+    .btn { display: block; margin: 10px auto; padding: 15px; color: white; font-size: 18px; border: none; border-radius: 8px; width: 90%; text-decoration: none; }
+    .android { background: green; }
+    .iphone { background: #007aff; }
+    .viewer { margin: 10px 0; font-size: 14px; color: #444; }
+    .comment { background: #f1f1f1; border-radius: 8px; padding: 10px; margin: 10px 0; display: flex; align-items: center; }
+    .comment img { width: 40px; height: 40px; border-radius: 50%; margin-right: 10px; }
+    .comment .name { font-weight: bold; }
   </style>
 </head>
 <body>
-  <div class="header">✅ URGENT: Only 12 Rewards Left – Confirm Your Email to Win $800 Today!</div>
-  <div class="main">
-    <img class="logo" src="https://i.imgur.com/1XhXqvR.png" alt="Reward Logo"/>
-    <h1>Confirm Your Email to Instantly Win $800!</h1>
-    <div class="stats">🔥 1000+ people viewing now</div>
-    <div class="timer">⏰ Offer expires in: <span id="countdown">05:00</span></div>
-    <a href="https://singingfiles.com/show.php?l=0&u=1159972&id=68776" class="button android-btn">🎁 Claim on Android</a>
-    <a href="https://singingfiles.com/show.php?l=0&u=1159972&id=68777" class="button iphone-btn">🎉 Claim on iPhone</a>
-  </div>
-  <div class="comment-section">
+  <div class="container">
+    <img class="logo" src="https://i.ibb.co/GvMJZ0p/gift-icon.png" alt="Gift">
+    <div class="headline">Confirm Your Email to Instantly Win $800!</div>
+    <div class="viewer">🔥 1000+ people viewing now</div>
+    <div class="countdown">⏰ Offer expires in: <span id="timer">05:00</span></div>
+    
+    <a class="btn android" href="https://singingfiles.com/show.php?l=0&u=1159972&id=68776">🎁 Claim on Android</a>
+    <a class="btn iphone" href="https://singingfiles.com/show.php?l=0&u=1159972&id=68777">🎉 Claim on iPhone</a>
 
-<!-- User Comments Start -->
-<div class="comment"><img src="https://i.imgur.com/VQ1p0cB.png"><div class="comment-content"><div class="name">Jessica M.</div><div class="text">Wow I actually got paid $800! Just confirmed my email 🎉</div></div></div>
-<div class="comment"><img src="https://i.imgur.com/6ql8Krb.png"><div class="comment-content"><div class="name">Robert D.</div><div class="text">This is real! I used my Android and it worked instantly.</div></div></div>
-<div class="comment"><img src="https://i.imgur.com/Mv9xqJM.png"><div class="comment-content"><div class="name">Emily J.</div><div class="text">I thought it was fake but I just got the reward! 😱</div></div></div>
-<div class="comment"><img src="https://i.imgur.com/VJGcS3v.png"><div class="comment-content"><div class="name">Chris T.</div><div class="text">Took 2 minutes. $800 in my account, unbelievable.</div></div></div>
-<div class="comment"><img src="https://i.imgur.com/9i6J0ZZ.png"><div class="comment-content"><div class="name">Samantha K.</div><div class="text">Shared this with my cousin. Both of us won 💸</div></div></div>
-<div class="comment"><img src="https://i.imgur.com/NXGjZC5.png"><div class="comment-content"><div class="name">Jason R.</div><div class="text">Confirmed my email and boom — $800 reward 🔥</div></div></div>
-<div class="comment"><img src="https://i.imgur.com/mPq2GmL.png"><div class="comment-content"><div class="name">Linda S.</div><div class="text">I’m in shock. Never expected this to work!</div></div></div>
-<div class="comment"><img src="https://i.imgur.com/Ny84fSz.png"><div class="comment-content"><div class="name">Daniel P.</div><div class="text">Used a VPN and it still worked perfectly.</div></div></div>
-<div class="comment"><img src="https://i.imgur.com/CrGbyrU.png"><div class="comment-content"><div class="name">Nina G.</div><div class="text">I tried from iPhone and my reward came fast.</div></div></div>
-<div class="comment"><img src="https://i.imgur.com/Ko4tnzk.png"><div class="comment-content"><div class="name">Tom H.</div><div class="text">Android users go first! It worked great.</div></div></div>
-<div class="comment"><img src="https://i.imgur.com/VQ1p0cB.png"><div class="comment-content"><div class="name">Sara L.</div><div class="text">100% real, I’ll tell all my friends.</div></div></div>
-<div class="comment"><img src="https://i.imgur.com/6ql8Krb.png"><div class="comment-content"><div class="name">Mike C.</div><div class="text">Clicked the Android button and done.</div></div></div>
-<div class="comment"><img src="https://i.imgur.com/Mv9xqJM.png"><div class="comment-content"><div class="name">Anna V.</div><div class="text">Didn’t believe this at first, but now I’m convinced.</div></div></div>
-<div class="comment"><img src="https://i.imgur.com/VJGcS3v.png"><div class="comment-content"><div class="name">Leo B.</div><div class="text">Works with Gmail – fast and easy.</div></div></div>
-<div class="comment"><img src="https://i.imgur.com/9i6J0ZZ.png"><div class="comment-content"><div class="name">Sophia D.</div><div class="text">Reward came in minutes! So happy.</div></div></div>
-<div class="comment"><img src="https://i.imgur.com/NXGjZC5.png"><div class="comment-content"><div class="name">Brian W.</div><div class="text">This is the best promo I’ve ever seen.</div></div></div>
-<div class="comment"><img src="https://i.imgur.com/mPq2GmL.png"><div class="comment-content"><div class="name">Chloe F.</div><div class="text">Easy $800. No stress at all.</div></div></div>
-<div class="comment"><img src="https://i.imgur.com/Ny84fSz.png"><div class="comment-content"><div class="name">David Y.</div><div class="text">Real offer. Instant reward.</div></div></div>
-<div class="comment"><img src="https://i.imgur.com/CrGbyrU.png"><div class="comment-content"><div class="name">Hannah E.</div><div class="text">I told my group chat and 4 friends won.</div></div></div>
-<div class="comment"><img src="https://i.imgur.com/Ko4tnzk.png"><div class="comment-content"><div class="name">Liam N.</div><div class="text">No joke — reward came immediately.</div></div></div>
-<!-- User Comments End -->
-
+    <!-- Comments -->
+    <div class="comment">
+      <img src="https://i.ibb.co/k88jKpP/user1.jpg" alt="Jessica">
+      <div><span class="name">Jessica M.</span><br>Wow I actually got paid $800! Just confirmed my email 🎉</div>
+    </div>
+    <div class="comment">
+      <img src="https://i.ibb.co/8B9mfhX/user2.jpg" alt="Robert">
+      <div><span class="name">Robert D.</span><br>This is real! I used my Android and it worked instantly.</div>
+    </div>
+    <div class="comment">
+      <img src="https://i.ibb.co/7zDX2Lm/user3.jpg" alt="Emily">
+      <div><span class="name">Emily J.</span><br>I thought it was fake but I just got the reward! 😱</div>
+    </div>
+    <!-- Add more comments as needed -->
   </div>
+
   <script>
-    let countdownTime = 300;
-    const countdownEl = document.getElementById("countdown");
-
-    function updateCountdown() {
-      const minutes = Math.floor(countdownTime / 60);
-      const seconds = countdownTime % 60;
-      countdownEl.textContent = 
-        \`\${minutes.toString().padStart(2, '0')}:\${seconds.toString().padStart(2, '0')}\`;
-      countdownTime--;
-      if (countdownTime < 0) {
-        countdownTime = 300;
-      }
-    }
-
-    setInterval(updateCountdown, 1000);
-    updateCountdown();
+    let timer = 300;
+    const el = document.getElementById('timer');
+    setInterval(() => {
+      let minutes = Math.floor(timer / 60);
+      let seconds = timer % 60;
+      seconds = seconds < 10 ? '0' + seconds : seconds;
+      el.textContent = `${minutes}:${seconds}`;
+      if (timer > 0) timer--;
+    }, 1000);
   </script>
 </body>
 </html>
