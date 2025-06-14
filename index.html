@@ -14,107 +14,46 @@
     .android { background: green; }
     .iphone { background: #007aff; }
     .viewer { margin: 10px 0; font-size: 14px; color: #444; }
-    .comment { background: #f1f1f1; border-radius: 8px; padding: 10px; margin: 10px 0; display: flex; align-items: center; }
+    .comment { background: #f1f1f1; border-radius: 8px; padding: 10px; margin: 10px 0; display: flex; align-items: center; text-align: left; }
     .comment img { width: 40px; height: 40px; border-radius: 50%; margin-right: 10px; }
     .comment .name { font-weight: bold; }
   </style>
 </head>
 <body>
   <div class="container">
-    <img class="logo" src="https://i.ibb.co/GvMJZ0p/gift-icon.png" alt="Gift">
+    <img class="logo" src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Gift">
     <div class="headline">Confirm Your Email to Instantly Win $800!</div>
-    <div class="viewer">🔥 1000+ people viewing now</div>
+    <div class="viewer">🔥 <span id="viewerCount">1000</span> people viewing now</div>
     <div class="countdown">⏰ Offer expires in: <span id="timer">05:00</span></div>
-    
+
     <a class="btn android" href="https://singingfiles.com/show.php?l=0&u=1159972&id=68776">🎁 Claim on Android</a>
     <a class="btn iphone" href="https://singingfiles.com/show.php?l=0&u=1159972&id=68777">🎉 Claim on iPhone</a>
 
-  <!-- (সর্বমোট ২০টি comment block এই কোডে আছে, নীচে শুরু হলো) -->
-
-<div class="comment">
-  <img src="https://i.pravatar.cc/150?img=11">
-  <div><span class="name">Jessica M.</span><br>Wow I actually got paid $800! Just confirmed my email 🎉</div>
-</div>
-<div class="comment">
-  <img src="https://i.pravatar.cc/150?img=12">
-  <div><span class="name">Robert D.</span><br>This is real! I used my Android and it worked instantly.</div>
-</div>
-<div class="comment">
-  <img src="https://i.pravatar.cc/150?img=13">
-  <div><span class="name">Emily J.</span><br>I thought it was fake but I just got the reward! 😱</div>
-</div>
-<div class="comment">
-  <img src="https://i.pravatar.cc/150?img=14">
-  <div><span class="name">Liam T.</span><br>Got my $800 just by confirming email! Insane 😍</div>
-</div>
-<div class="comment">
-  <img src="https://i.pravatar.cc/150?img=15">
-  <div><span class="name">Sofia R.</span><br>This is LEGIT! Shared it with my friends too!</div>
-</div>
-<div class="comment">
-  <img src="https://i.pravatar.cc/150?img=16">
-  <div><span class="name">James C.</span><br>I’ve never seen something work this fast 🔥</div>
-</div>
-<div class="comment">
-  <img src="https://i.pravatar.cc/150?img=17">
-  <div><span class="name">Ava N.</span><br>Got it in minutes after signing up! 😍</div>
-</div>
-<div class="comment">
-  <img src="https://i.pravatar.cc/150?img=18">
-  <div><span class="name">Noah L.</span><br>Honestly, this works. Confirm and claim 💯</div>
-</div>
-<div class="comment">
-  <img src="https://i.pravatar.cc/150?img=19">
-  <div><span class="name">Olivia P.</span><br>I’m shocked it actually worked. Thanks! 🙏</div>
-</div>
-<div class="comment">
-  <img src="https://i.pravatar.cc/150?img=20">
-  <div><span class="name">William G.</span><br>This is the easiest $800 I’ve ever made! 💸</div>
-</div>
-<div class="comment">
-  <img src="https://i.pravatar.cc/150?img=21">
-  <div><span class="name">Isabella K.</span><br>Don’t wait. Just try it. It’s real!</div>
-</div>
-<div class="comment">
-  <img src="https://i.pravatar.cc/150?img=22">
-  <div><span class="name">Ethan F.</span><br>Filled the email and boom! It’s in my PayPal!</div>
-</div>
-<div class="comment">
-  <img src="https://i.pravatar.cc/150?img=23">
-  <div><span class="name">Mia W.</span><br>I didn’t believe at first but now I’m smiling 😄</div>
-</div>
-<div class="comment">
-  <img src="https://i.pravatar.cc/150?img=24">
-  <div><span class="name">Benjamin H.</span><br>Just confirmed on my iPhone, worked perfect.</div>
-</div>
-<div class="comment">
-  <img src="https://i.pravatar.cc/150?img=25">
-  <div><span class="name">Amelia D.</span><br>It’s like a dream! I got paid in 2 mins.</div>
-</div>
-<div class="comment">
-  <img src="https://i.pravatar.cc/150?img=26">
-  <div><span class="name">Lucas V.</span><br>This offer is 🔥 — 800 bucks just for email?</div>
-</div>
-<div class="comment">
-  <img src="https://i.pravatar.cc/150?img=27">
-  <div><span class="name">Charlotte B.</span><br>I thought this was fake, but it’s not! 😲</div>
-</div>
-<div class="comment">
-  <img src="https://i.pravatar.cc/150?img=28">
-  <div><span class="name">Henry Z.</span><br>I signed up and got my bonus in no time!</div>
-</div>
-<div class="comment">
-  <img src="https://i.pravatar.cc/150?img=29">
-  <div><span class="name">Evelyn T.</span><br>Sharing this with all my family now!</div>
-</div>
-<div class="comment">
-  <img src="https://i.pravatar.cc/150?img=30">
-  <div><span class="name">Daniel M.</span><br>Seriously the best email I’ve ever confirmed 😅</div>
-</div>
-
-<!-- END 20 comments -->
+    <!-- Comments -->
+    <div class="comment"><img src="https://i.ibb.co/k88jKpP/user1.jpg"><div><span class="name">Jessica M.</span><br>Wow I actually got paid $800! Just confirmed my email 🎉</div></div>
+    <div class="comment"><img src="https://i.ibb.co/8B9mfhX/user2.jpg"><div><span class="name">Robert D.</span><br>This is real! I used my Android and it worked instantly.</div></div>
+    <div class="comment"><img src="https://i.ibb.co/7zDX2Lm/user3.jpg"><div><span class="name">Emily J.</span><br>I thought it was fake but I just got the reward! 😱</div></div>
+    <div class="comment"><img src="https://i.ibb.co/9wRgLg4/user4.jpg"><div><span class="name">Mike W.</span><br>Quick and easy! Got my $800 in 5 minutes 🔥</div></div>
+    <div class="comment"><img src="https://i.ibb.co/HxMZkWy/user5.jpg"><div><span class="name">Sarah T.</span><br>Confirmed email and boom! Money received 💸</div></div>
+    <div class="comment"><img src="https://i.ibb.co/jfBjf6q/user6.jpg"><div><span class="name">David R.</span><br>This changed my day. Thanks! 🙏</div></div>
+    <div class="comment"><img src="https://i.ibb.co/N2rdKbt/user7.jpg"><div><span class="name">Linda F.</span><br>Just got paid. Legit offer! 💯</div></div>
+    <div class="comment"><img src="https://i.ibb.co/s6z9QG8/user8.jpg"><div><span class="name">Chris B.</span><br>Used my iPhone and it worked perfectly 🎯</div></div>
+    <div class="comment"><img src="https://i.ibb.co/9H6GqWW/user9.jpg"><div><span class="name">Anna K.</span><br>I told all my friends. We all got paid! 💵</div></div>
+    <div class="comment"><img src="https://i.ibb.co/YWkPvK2/user10.jpg"><div><span class="name">James L.</span><br>No scam, real payout 😍</div></div>
+    <div class="comment"><img src="https://i.ibb.co/NyMftMH/user11.jpg"><div><span class="name">Megan S.</span><br>I’m shocked it actually worked! 💥</div></div>
+    <div class="comment"><img src="https://i.ibb.co/gPsFZP4/user12.jpg"><div><span class="name">Daniel C.</span><br>Thanks for the quick $800 💖</div></div>
+    <div class="comment"><img src="https://i.ibb.co/txqkD1W/user13.jpg"><div><span class="name">Sophia V.</span><br>I never thought it was real, but it is! ✅</div></div>
+    <div class="comment"><img src="https://i.ibb.co/0VThzM8/user14.jpg"><div><span class="name">Brian T.</span><br>I’m already spending the money 😎</div></div>
+    <div class="comment"><img src="https://i.ibb.co/jRQk7jt/user15.jpg"><div><span class="name">Olivia P.</span><br>I got mine in 3 minutes 🚀</div></div>
+    <div class="comment"><img src="https://i.ibb.co/dP2pr6s/user16.jpg"><div><span class="name">Tom H.</span><br>Highly recommend! 🤑</div></div>
+    <div class="comment"><img src="https://i.ibb.co/6XN12Kv/user17.jpg"><div><span class="name">Natalie W.</span><br>This is not a joke. Confirm & win! 😲</div></div>
+    <div class="comment"><img src="https://i.ibb.co/zRVDS0W/user18.jpg"><div><span class="name">Ryan J.</span><br>So easy and real! 🧡</div></div>
+    <div class="comment"><img src="https://i.ibb.co/GJz3HMX/user19.jpg"><div><span class="name">Emma C.</span><br>I got my reward instantly! 💰</div></div>
+    <div class="comment"><img src="https://i.ibb.co/yN1fbBN/user20.jpg"><div><span class="name">Liam B.</span><br>This actually works. Don’t miss it! 🚨</div></div>
+  </div>
 
   <script>
+    // Countdown timer
     let timer = 300;
     const el = document.getElementById('timer');
     setInterval(() => {
@@ -124,5 +63,13 @@
       el.textContent = `${minutes}:${seconds}`;
       if (timer > 0) timer--;
     }, 1000);
+
+    // Fake viewer counter
+    const viewerEl = document.getElementById('viewerCount');
+    setInterval(() => {
+      const fakeCount = 900 + Math.floor(Math.random() * 400); // 900-1300
+      viewerEl.textContent = fakeCount;
+    }, 3000);
   </script>
 </body>
+</html>
