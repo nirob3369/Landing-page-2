@@ -1,163 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Win $800 – Confirm Now!</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Win $800 Instantly</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
   <style>
-    body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background: #f9f9f9; }
-    .container { max-width: 500px; margin: auto; background: #fff; padding: 20px; text-align: center; border-radius: 10px; box-shadow: 0 0 10px #ccc; }
-    .logo { width: 100px; margin: 10px auto; }
-    .headline { font-size: 24px; font-weight: bold; margin: 20px 0; }
-    .countdown { font-size: 18px; color: red; margin-bottom: 15px; }
-    .btn { display: block; margin: 10px auto; padding: 15px; color: white; font-size: 18px; border: none; border-radius: 8px; width: 90%; text-decoration: none; }
-    .android { background: green; }
-    .iphone { background: #007aff; }
-    .viewer { margin: 10px 0; font-size: 14px; color: #444; }
-    .comment { background: #f1f1f1; border-radius: 8px; padding: 10px; margin: 10px 0; display: flex; align-items: center; text-align: left; }
-    .comment img { width: 40px; height: 40px; border-radius: 50%; margin-right: 10px; }
-    .comment .name { font-weight: bold; }
+    body {
+      font-family: 'Inter', sans-serif;
+      text-align: center;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    .logo {
+      width: 100px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    h1 {
+      font-size: 26px;
+      color: #000;
+    }
+    .viewers {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+    .countdown {
+      color: red;
+      font-size: 18px;
+      margin: 10px 0;
+    }
+    .button {
+      display: block;
+      margin: 10px auto;
+      padding: 15px;
+      width: 80%;
+      font-size: 18px;
+      border-radius: 10px;
+      color: white;
+      text-decoration: none;
+    }
+    .android {
+      background-color: green;
+    }
+    .iphone {
+      background-color: #007bff;
+    }
+    .comment {
+      background: white;
+      padding: 10px;
+      margin: 10px auto;
+      border-radius: 10px;
+      width: 90%;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-align: left;
+    }
+    .comment img {
+      width: 50px;
+      border-radius: 50%;
+    }
+    .name {
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img class="logo" src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Gift">
-    <div class="headline">Confirm Your Email to Instantly Win $800!</div>
-    <div class="viewer">🔥 <span id="viewerCount">1000</span> people viewing now</div>
-    <div class="countdown">⏰ Offer expires in: <span id="timer">05:00</span></div>
+  <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" class="logo" alt="Logo"/>
+  <h1>Confirm Your Email to Instantly Win $800!</h1>
+  <div class="viewers">🔥 1061 people viewing now</div>
+  <div class="countdown">⏰ Offer expires in: <span id="timer">05:00</span></div>
 
-    <a class="btn android" href="https://singingfiles.com/show.php?l=0&u=1159972&id=68776">🎁 Claim on Android</a>
-    <a class="btn iphone" href="https://singingfiles.com/show.php?l=0&u=1159972&id=68777">🎉 Claim on iPhone</a>
+  <a href="https://singingfiles.com/show.php?l=0&u=1159972&id=68776" class="button android">🎁 Claim on Android</a>
+  <a href="https://singingfiles.com/show.php?l=0&u=1159972&id=68777" class="button iphone">🎉 Claim on iPhone</a>
 
-    <!-- Comments -->
-    <!-- START: 20 Fake Reviews -->
-<div class="comment">
-  <img src="https://i.ibb.co/k88jKpP/user1.jpg" alt="Jessica">
-  <div><span class="name">Jessica M.</span><br>Wow I actually got paid $800! Just confirmed my email 🎉</div>
-</div>
-<div class="comment">
-  <img src="https://i.ibb.co/8B9mfhX/user2.jpg" alt="Robert">
-  <div><span class="name">Robert D.</span><br>This is real! I used my Android and it worked instantly.</div>
-</div>
-<div class="comment">
-  <img src="https://i.ibb.co/7zDX2Lm/user3.jpg" alt="Emily">
-  <div><span class="name">Emily J.</span><br>I thought it was fake but I just got the reward! 😱</div>
-</div>
+  <div id="comments"></div>
 
-   
-    <div class="comment">
-  <img src="https://i.ibb.co/k88jKpP/user1.jpg" alt="Jessica">
-  <div><span class="name">Jessica M.</span><br>Wow I actually got paid $800! Just confirmed my email 🎉</div>
-</div>
-<div class="comment">
-  <img src="https://i.ibb.co/8B9mfhX/user2.jpg" alt="Robert">
-  <div><span class="name">Robert D.</span><br>This is real! I used my Android and it worked instantly.</div>
-</div>
-<div class="comment">
-  <img src="https://i.ibb.co/7zDX2Lm/user3.jpg" alt="Emily">
-  <div><span class="name">Emily J.</span><br>I thought it was fake but I just got the reward! 😱</div>
-</div>
-
-    <div class="comment">
-  <img src="https://i.ibb.co/k88jKpP/user1.jpg" alt="Jessica">
-  <div><span class="name">Jessica M.</span><br>Wow I actually got paid $800! Just confirmed my email 🎉</div>
-</div>
-<div class="comment">
-  <img src="https://i.ibb.co/8B9mfhX/user2.jpg" alt="Robert">
-  <div><span class="name">Robert D.</span><br>This is real! I used my Android and it worked instantly.</div>
-</div>
-<div class="comment">
-  <img src="https://i.ibb.co/7zDX2Lm/user3.jpg" alt="Emily">
-  <div><span class="name">Emily J.</span><br>I thought it was fake but I just got the reward! 😱</div>
-</div>
-<div class="comment">
-  <img src="https://i.ibb.co/ZG0YvWw/user4.jpg" alt="Liam">
-  <div><span class="name">Liam W.</span><br>My brother didn’t believe me until I showed him my PayPal.</div>
-</div>
-<div class="comment">
-  <img src="https://i.ibb.co/GQwffWv/user5.jpg" alt="Sophia">
-  <div><span class="name">Sophia L.</span><br>Easy process. Took only 2 minutes to claim!</div>
-</div>
-<div class="comment">
-  <img src="https://i.ibb.co/zNtMGZK/user6.jpg" alt="Noah">
-  <div><span class="name">Noah T.</span><br>I got the gift card within 10 minutes of submitting.</div>
-</div>
-<div class="comment">
-  <img src="https://i.ibb.co/NnnyJXm/user7.jpg" alt="Olivia">
-  <div><span class="name">Olivia R.</span><br>This made my day 😍</div>
-</div>
-<div class="comment">
-  <img src="https://i.ibb.co/Y2cT4tZ/user8.jpg" alt="Aiden">
-  <div><span class="name">Aiden B.</span><br>Confirmed my email and boom, $800 reward!</div>
-</div>
-<div class="comment">
-  <img src="https://i.ibb.co/wQpHfK0/user9.jpg" alt="Ava">
-  <div><span class="name">Ava K.</span><br>I love offers like this. They really pay out.</div>
-</div>
-<div class="comment">
-  <img src="https://i.ibb.co/0BC9fs4/user10.jpg" alt="Ethan">
-  <div><span class="name">Ethan H.</span><br>Used my iPhone and had no issues. Smooth process.</div>
-</div>
-<div class="comment">
-  <img src="https://i.ibb.co/XzRMjgb/user11.jpg" alt="Isabella">
-  <div><span class="name">Isabella V.</span><br>My sister and I both got rewarded. So excited!!</div>
-</div>
-<div class="comment">
-  <img src="https://i.ibb.co/F6ZTr5H/user12.jpg" alt="Lucas">
-  <div><span class="name">Lucas M.</span><br>Didn’t expect this to work, but it did 💯</div>
-</div>
-<div class="comment">
-  <img src="https://i.ibb.co/qyPnkCH/user13.jpg" alt="Mia">
-  <div><span class="name">Mia G.</span><br>800 dollars! That’s amazing, thanks 😍</div>
-</div>
-<div class="comment">
-  <img src="https://i.ibb.co/wY00dR7/user14.jpg" alt="Logan">
-  <div><span class="name">Logan A.</span><br>I’m telling all my friends about this.</div>
-</div>
-<div class="comment">
-  <img src="https://i.ibb.co/6D5VrGL/user15.jpg" alt="Amelia">
-  <div><span class="name">Amelia F.</span><br>It’s fast and simple. I recommend it.</div>
-</div>
-<div class="comment">
-  <img src="https://i.ibb.co/D4rd30z/user16.jpg" alt="James">
-  <div><span class="name">James P.</span><br>Worked better than I expected. Great offer!</div>
-</div>
-<div class="comment">
-  <img src="https://i.ibb.co/vcwDQ1s/user17.jpg" alt="Charlotte">
-  <div><span class="name">Charlotte D.</span><br>I never win anything, but this time I did!</div>
-</div>
-<div class="comment">
-  <img src="https://i.ibb.co/y0SJmx4/user18.jpg" alt="Benjamin">
-  <div><span class="name">Benjamin N.</span><br>I thought it was too good to be true...but it worked!</div>
-</div>
-<div class="comment">
-  <img src="https://i.ibb.co/VxkPL9X/user19.jpg" alt="Harper">
-  <div><span class="name">Harper S.</span><br>Literally just confirmed and got the cash. Awesome!</div>
-</div>
-<div class="comment">
-  <img src="https://i.ibb.co/FsPHzrh/user20.jpg" alt="Elijah">
-  <div><span class="name">Elijah C.</span><br>I didn’t expect $800 today...but here we are 😎</div>
-</div>
-<!-- END: 20 Fake Reviews -->
-
-    
   <script>
     // Countdown timer
-    let timer = 300;
-    const el = document.getElementById('timer');
+    let time = 300;
+    const timer = document.getElementById('timer');
     setInterval(() => {
-      let minutes = Math.floor(timer / 60);
-      let seconds = timer % 60;
-      seconds = seconds < 10 ? '0' + seconds : seconds;
-      el.textContent = `${minutes}:${seconds}`;
-      if (timer > 0) timer--;
+      const minutes = Math.floor(time / 60);
+      const seconds = time % 60;
+      timer.textContent = `${minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
+      if (time > 0) time--;
     }, 1000);
 
-    // Fake viewer counter
-    const viewerEl = document.getElementById('viewerCount');
-    setInterval(() => {
-      const fakeCount = 900 + Math.floor(Math.random() * 400); // 900-1300
-      viewerEl.textContent = fakeCount;
-    }, 3000);
+    // Comments with photos
+    const commentsData = [
+      { name: "Jessica M.", text: "Wow I actually got paid $800! Just confirmed my email 🎉", img: "https://randomuser.me/api/portraits/women/44.jpg" },
+      { name: "Robert D.", text: "This is real! I used my Android and it worked instantly.", img: "https://randomuser.me/api/portraits/men/46.jpg" },
+      { name: "Emily J.", text: "I thought it was fake but I just got the reward! 😱", img: "https://randomuser.me/api/portraits/women/55.jpg" },
+      { name: "Kevin P.", text: "Took 1 minute to sign up and boom! $800", img: "https://randomuser.me/api/portraits/men/33.jpg" },
+      { name: "Sophia R.", text: "Confirmed my email, claimed on iPhone! 💖", img: "https://randomuser.me/api/portraits/women/65.jpg" },
+      { name: "Daniel W.", text: "I shared with my friends too. Easy money!", img: "https://randomuser.me/api/portraits/men/52.jpg" },
+      { name: "Laura G.", text: "Literally free $800 – can't believe it 😍", img: "https://randomuser.me/api/portraits/women/36.jpg" },
+      { name: "Mark L.", text: "Worked without any issue!", img: "https://randomuser.me/api/portraits/men/25.jpg" },
+      { name: "Anna B.", text: "Best offer I've seen this year!", img: "https://randomuser.me/api/portraits/women/88.jpg" },
+      { name: "James T.", text: "It redirected me, I completed it, got $800!", img: "https://randomuser.me/api/portraits/men/58.jpg" },
+      { name: "Nina H.", text: "Fast and real! 🎯", img: "https://randomuser.me/api/portraits/women/29.jpg" },
+      { name: "Chris F.", text: "No tricks – it really pays.", img: "https://randomuser.me/api/portraits/men/60.jpg" },
+      { name: "Olivia K.", text: "Shared with my cousin. Both got paid!", img: "https://randomuser.me/api/portraits/women/40.jpg" },
+      { name: "Liam Z.", text: "Used USA VPN and it worked 🔥", img: "https://randomuser.me/api/portraits/men/42.jpg" },
+      { name: "Rachel S.", text: "Too good! Instant result 💸", img: "https://randomuser.me/api/portraits/women/22.jpg" },
+      { name: "Tom E.", text: "Thanks for sharing this offer!", img: "https://randomuser.me/api/portraits/men/18.jpg" },
+      { name: "Grace M.", text: "Confirmed email, done ✅", img: "https://randomuser.me/api/portraits/women/13.jpg" },
+      { name: "Leo V.", text: "Works best on Android", img: "https://randomuser.me/api/portraits/men/66.jpg" },
+      { name: "Mia N.", text: "Recommended to everyone 💯", img: "https://randomuser.me/api/portraits/women/59.jpg" },
+      { name: "Ethan Q.", text: "Easy process, fast payment!", img: "https://randomuser.me/api/portraits/men/31.jpg" }
+    ];
+
+    const commentsContainer = document.getElementById('comments');
+    commentsData.forEach(c => {
+      commentsContainer.innerHTML += `
+        <div class="comment">
+          <img src="${c.img}" alt="User"/>
+          <div>
+            <div class="name">${c.name}</div>
+            <div>${c.text}</div>
+          </div>
+        </div>
+      `;
+    });
   </script>
 </body>
+</html>
