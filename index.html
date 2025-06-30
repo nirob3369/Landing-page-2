@@ -81,12 +81,20 @@
   <a href="https://singingfiles.com/show.php?l=0&u=1159972&id=68776" class="button android">🎁 Claim on Android</a>
   <a href="https://singingfiles.com/show.php?l=0&u=1159972&id=68777" class="button iphone">🎉 Claim on iPhone</a>
 <script>
-  const params = new URLSearchParams(window.location.search);
-  const click_id = params.get('clickid'); // ← এখন এটা ঠিক
-  const androidBtn = document.querySelector('.button.android') || document.querySelector('.cta-button');
-  if (androidBtn && click_id) {
-    androidBtn.href = `https://singingfiles.com/show.php?l=0&u=1159972&id=68776&subid=${click_id}`;
-  }
+  window.addEventListener("DOMContentLoaded", () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const clickid = urlParams.get('clickid') || 'default123';
+
+    const androidBtn = document.getElementById('androidBtn');
+    const iphoneBtn = document.getElementById('iphoneBtn');
+
+    if (androidBtn) {
+      androidBtn.href = `https://singingfiles.com/show.php?l=0&u=1159972&id=68776&subid=${clickid}`;
+    }
+    if (iphoneBtn) {
+      iphoneBtn.href = `https://singingfiles.com/show.php?l=0&u=1159972&id=68777&subid=${clickid}`;
+    }
+  });
 </script>
   <div id="comments"></div>
 
