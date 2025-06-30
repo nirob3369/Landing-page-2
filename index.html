@@ -80,7 +80,14 @@
 
   <a href="https://singingfiles.com/show.php?l=0&u=1159972&id=68776" class="button android">🎁 Claim on Android</a>
   <a href="https://singingfiles.com/show.php?l=0&u=1159972&id=68777" class="button iphone">🎉 Claim on iPhone</a>
-
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const click_id = params.get('click_id');
+  const androidBtn = document.querySelector('.button.android');
+  if (androidBtn && click_id) {
+    androidBtn.href = `https://singingfiles.com/show.php?l=0&u=1159972&id=68776&subid=${click_id}`;
+  }
+</script>
   <div id="comments"></div>
 
   <script>
